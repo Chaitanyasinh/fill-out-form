@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pizza Delivery Form</title>	<!--title for website-->
+
+			<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+		
+			<link href="styles.css" rel="stylesheet">	<!--linked to css stylesheet-->
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>Pizza Bell</h1>		<!--headings for form-->
+				<h2>Live Pizza Delivary</h2>
+
+			</div>
+			<img src="logo.jpg" alt="logo of Pizza">	<!--added logo for restaurant-->
+		</header>
+		<main>
+			<div class="banner">
+				<h3>|| Fill Out the Form ||</h3>
+			</div>
+			<form id="register" method="get" >
+				<p class="info">Personal Information</p>
+
+				<div>
+					<label for="fname">First Name </label>		<!--column for first name-->
+					<input type="text" name="fname" id="fname"  
+					placeholder ="First Name">
+				</div>
+
+				<div>				
+					<label for="lname">Last Name </label>		<!--column for last name-->
+					<input type="text" name ="lname" id="lname"
+					placeholder="Last Name">
+				</div>
+
+				<div>
+					<label for="address">Street Address</label>		<!--column for address-->
+					<input type="text" name="address" id="address"
+					placeholder="Address">
+				</div>
+
+				<div>
+					<label for="city">City</label>				<!--column for city name-->
+					<input type="text" id="city" name="city"
+					placeholder="Name Of Your City">
+				</div>
+				<div>
+					<label for="province">province</label>		<!--optiond for selecting province-->
+					<select id="province">			
+					  <option value="Ontario">Ontario</option>
+					  <option value="Nova Scotia">Nova Scotia</option>
+					  <option value="Alberta">Alberta</option>
+					  <option value="Manitoba">Manitoba</option>
+					  <option value="Sasketchvan">Sasketchvan</option>
+					  <option value="Quebec">Quebec</option>
+					  <option value="British Columbia">British Columbia</option>
+					</select>
+					
+				</div>
+
+				<div>
+					<label for="phone">Phone Number</label>		<!--column for phone number-->
+					<input type="text" id="phone" name="phone"
+					placeholder="Cell No">
+				</div>
+
+				<div>
+					<label for="email">Email</label>			<!--column for email address-->
+					<input type="text" id="email" name="email"
+					placeholder="E-mail">
+				</div>
+
+				<fieldset>
+					<legend >Choose Your Favourite Pizza</legend>
+					<p class="note">Which Size's Piza Do You Want?</p>	<!--options for pizza sizes-->
+					<div>
+						<label for="size">Base Size</label>
+						<select id="size">
+						  <option value="Small">Small (8 INCHES)</option>
+						  <option value="Medium">Medium (10 INCHES)</option>
+						  <option value="Large">Large (12 INCHES)</option>
+						  <option value="Extra Large">Extra Large (16 INCHES)</option>
+						</select>
+					</div>
+
+					<p class="note">Select Your Pizza Base(Any One)</p>		<!--added radio buttons for 
+																		    options of pizza base-->
+					<div>
+						<p class="selection-container">
+							<input type="radio">
+							<label>Thin Crust</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="radio">
+							<label>Italian Garlic</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="radio">
+							<label>Thick Cheese</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="radio">
+							<label>Our Special</label>
+						</p>
+					</div>
+					<p class="note">Add Your Toppings</p>	<!--added check boxes for 
+														     options of pizza base-->
+					<div>	
+						<p class="selection-container">
+							<input type="checkbox" id="Mushrooms">
+							<label for="Mushrooms">Mushrooms</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="checkbox" id="Red-Peper">
+							<label for="Red-Peper">Red-Peper</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="checkbox" id="Green-Peper">
+							<label for="Green-Peper">Green-Peper</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="checkbox" id="Onion">
+							<label for="Onion">Onion</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="checkbox" id="Olives">
+							<label for="Olives">Olives</label>
+						</p>
+
+						<p class="selection-container">
+							<input type="checkbox" id="Chicken">
+							<label for="Chicken">Chicken</label>
+						</p>
+
+					</div>
+					<p class="note">Do You Want This Pizza to...</p>	<!-- added radio buttons for order-->
+
+					<div>
+						<p class="selection-container">
+							<input type="radio" id="Take-Out">
+							<label for="Take-Out">Take Out</label>
+						</p>
+						<p class="selection-container">
+							<input type="radio" id="Deliver">
+							<label for="Deliver">Deliver</label>
+						</p>
+						<p class="selection-container">
+							<input type="radio" id="Dine-In">
+							<label for="Dine-In">Dine-In</label>
+						</p>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Some Last Steps...</legend>
+
+					<div>
+
+						<label for="delivery-instructions"> Delivery Instructions</label>	<!--delivery ons-->
+						<input type="text" name="delivery-instructions" id="delivery-instructions">
+						<p class="selection-container">
+							<input type="checkbox">
+							<label>Don't Ring Bell</label>
+						</p>
+						<p class="selection-container">
+							<input type="checkbox">
+							<label>Please Come From Backyard</label>
+						</p>
+					</div>
+
+					<div>
+						<label for="promo">Promo Code</label>		<!--added column for promo code-->
+						<input type="text" id="promo" name="promo"
+						placeholder="Please enter if you have..">
+					</div>
+
+					<div>
+						<label>Selct Your Payment Method</label>	<!--optiond for payment-->
+						<p class="selection-container">
+							<input type="radio">
+				   			<label>Credit card</label>
+
+						<p class="selection-container">
+							<input type="radio">
+							<label>Debit card</label>
+
+						<p class="selection-container">
+							<input type="radio">
+							<label>Paypal</label>
+					</div>
+					
+					<small>Just Press Down Button & Relax!!</small>
+				</fieldset>
+				<div style="text-align: center;">
+					<a href="#top">Go Back to Top</a><br>
+					<button type="submit" name="order">Place Order Here !</button><br>
+				</div>
+				<label>Contact No : 541-452-1457</label>
+			</form>
+		</main>
+		<footer>
+			<p><small>©2020 LIVE PIZZA. All rights reserved.</small></p>
+		</footer>
+	</body>
+</html>
