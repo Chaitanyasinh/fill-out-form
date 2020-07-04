@@ -45,7 +45,7 @@ header h2 {
 	text-transform: uppercase;
 	font-size: 1em;
 	margin-top: 0;
-	font-family: New Century Schoolbook,Snell Roundhand, cursive;
+	font-family: 'Tangerine', serif;
 }
 
 h3 {
@@ -69,7 +69,7 @@ h3 {
 }
 
 form {
-	width: 80%;
+	width: 75%;
 	max-width: 800px;
 	background-color: white;
 	padding: 20px;
@@ -96,7 +96,7 @@ legend {
 	font-weight: bold;
 }
 fieldset div {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.7em;
 }
 div label {
 	display: block;
